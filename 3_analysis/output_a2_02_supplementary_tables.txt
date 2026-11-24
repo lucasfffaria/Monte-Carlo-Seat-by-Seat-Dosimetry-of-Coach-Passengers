@@ -1,0 +1,325 @@
+Supplementary Material: Tables S1-S15 (Markdown)
+Rates per GBq in the body use the [177Lu]Lu-PSMA-617 distribution at 4 h, bladder just emptied; trip doses are for the typical activities (7.4 GBq 177Lu or 161Tb, 0.2 GBq 212Pb, 8 MBq 225Ac).
+
+### Table S1. Main dimensions of the coach model
+
+| Item | Value |
+|---|---|
+| Seat layout | 2 + 2, seven rows (0–6); rows 1–5 occupied; patient in row 3 |
+| Seat module (centre-to-centre width of two adjacent seats) | 50.5 cm |
+| Aisle width | 35 cm |
+| Seat pitch | 80 cm |
+| Seat cushion (width × depth × thickness) | 45 × 42 × 10 cm |
+| Top of the seat cushion above the floor | 38.5 cm |
+| Seat pan thickness | 2 mm |
+| Backrest (thickness × height above the cushion); shell thickness | 8 × 65 cm; 10 mm |
+| Cabin, inner width × height × length | 241 × 200 × 830 cm |
+| Lateral seat positions (x of the seat centre) | LW −93.25 cm, LA −42.75 cm, RA +42.75 cm, RW +93.25 cm |
+| Rows (y of the front face of the backrest) | 0: −240, 1: −160, 2: −80, 3: +0, 4: +80, 5: +160, 6: +240 cm |
+
+### Table S2. Structure of the coach as simulated (deck B02): material, density, thickness and height of each layer
+
+| Part | Material | MCNP material | Density (g cm⁻³) | Thickness (mm) | Height above the floor (cm) |
+|---|---|---|---|---|---|
+| Seat cushion | Polyurethane foam | m206 | 0.05 | 100 | 28.5 to 38.5 |
+| Seat pan | Steel | m201 | 7.85 | 2 | 28.3 to 28.5 |
+| Backrest | Polyurethane foam | m206 | 0.05 | 80 | 38.5 to 103.5 |
+| Backrest shell | Plastic (polyolefin) | m207 | 0.9 | 10 | 38.5 to 103.5 |
+| Floor, top layer | PVC (vinyl) | m205 | 1.4 | 2 | −0.2 to 0 |
+| Floor, middle layer | Plywood | m204 | 0.6 | 18 | −2 to −0.2 |
+| Floor, bottom layer | Steel | m201 | 7.85 | 2 | −2.2 to −2 |
+| Side wall, inner panel below the windows | Plastic (polyolefin) | m207 | 0.9 | 5 | 0 to 80 |
+| Side wall, windows | Glass (soda-lime) | m203 | 2.5 | 5 | 80 to 175 |
+| Side wall, inner panel above the windows | Plastic (polyolefin) | m207 | 0.9 | 5 | 175 to 200 |
+| Side wall, gap | Air (dry) | m200 | 0.001205 | 13 | 0 to 200 |
+| Side wall, outer skin | Aluminium | m202 | 2.7 | 2 | 0 to 200 |
+| Roof, inner panel | Plastic (polyolefin) | m207 | 0.9 | 3 | 200 to 200.3 |
+| Roof, gap | Air (dry) | m200 | 0.001205 | 40 | 200.3 to 204.3 |
+| Roof, outer skin | Aluminium | m202 | 2.7 | 2 | 204.3 to 204.5 |
+| Front and rear walls | Plastic (polyolefin) | m207 | 0.9 | 10 | 0 to 200 |
+
+### Table S3. Materials of the coach (composition in % by mass)
+
+| MCNP material | Material | Density used (g cm⁻³) | Composition (% by mass) |
+|---|---|---|---|
+| m200 | Air (dry) | 0.001205 | C 0.0124; N 75.53; O 23.18; Ar 1.283 |
+| m201 | Steel | 7.85 | Fe 98.8; Mn 0.8; C 0.4 |
+| m202 | Aluminium | 2.7 | Al 100 |
+| m203 | Glass (soda-lime) | 2.5 | O 45.98; Na 9.64; Si 33.65; Ca 10.72; Mg 0.01 |
+| m204 | Plywood | 0.6 | H 6.2; C 49.5; O 44.3 |
+| m205 | PVC (vinyl) | 1.4 | H 4.84; C 38.44; Cl 56.72 |
+| m206 | Polyurethane foam | 0.05 | H 7.1; C 63; N 6.8; O 23.1 |
+| m207 | Plastic (polyolefin) | 0.9 | H 14.37; C 85.63 |
+
+### Table S4. Seated phantoms: posture parameters and implementation
+
+| Phantom | Role | Hip angle (°) | Elbow flexion (°) | Forearm rotation about the vertical (°) | Seat surface above the soles (cm) | Voxel array (columns × rows × slices) | Slabs | Lattice elements (10⁶) | Mass standing (kg) | Mass seated (kg) | Change (%) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| AM | Patient and passengers | 95 | 75 | 12 | 38.4 | 254 × 330 × 172 | 15 | 4.03 | 73.15 | 74.45 | +1.78 |
+| AF | Passengers | 99 | 75 | 12 | 37.8 | 299 × 340 × 273 | 27 | 7.23 | 60.03 | 61.19 | +1.94 |
+
+### Table S5. Organs and tissues whose mass changed by more than 3% when the phantoms were seated
+
+| Phantom | Organ or tissue (ICRP 110 ID) | Mass standing (g) | Mass seated (g) | Change (%) |
+|---|---|---|---|---|
+| AM | Blood vessels, legs (12) | 83.0 | 63.7 | −23.2 |
+| AM | Wrists and hand bones, cortical (22) | 179.7 | 173.4 | −3.5 |
+| AM | Femora, upper half, cortical (28) | 261.6 | 250.8 | −4.2 |
+| AM | Cartilage, trunk (58) | 88.7 | 95.2 | +7.4 |
+| AM | Cartilage, arms (59) | 5.9 | 6.4 | +8.2 |
+| AM | Lymphatic nodes, trunk (103) | 104.4 | 97.8 | −6.3 |
+| AM | Lymphatic nodes, arms (104) | 7.8 | 6.0 | −23.6 |
+| AM | Lymphatic nodes, legs (105) | 11.1 | 4.3 | −61.7 |
+| AM | Muscle, trunk (107) | 15004.9 | 15727.3 | +4.8 |
+| AM | Muscle, legs (109) | 10023.7 | 9720.9 | −3.0 |
+| AM | Residual tissue, trunk (117) | 12368.4 | 13617.0 | +10.1 |
+| AM | Residual tissue, legs (119) | 5395.8 | 5204.2 | −3.5 |
+| AM | Skin, trunk (123) | 1465.0 | 1543.4 | +5.3 |
+| AF | Blood vessels, trunk (10) | 242.4 | 232.7 | −4.0 |
+| AF | Blood vessels, arms (11) | 43.2 | 40.7 | −5.9 |
+| AF | Blood vessels, legs (12) | 92.6 | 80.0 | −13.6 |
+| AF | Humeri, lower half, cortical (16) | 102.2 | 99.0 | −3.1 |
+| AF | Humeri, lower half, spongiosa (17) | 52.8 | 41.7 | −21.0 |
+| AF | Cartilage, legs (60) | 222.6 | 206.6 | −7.2 |
+| AF | Lymphatic nodes, arms (104) | 3.9 | 3.7 | −5.6 |
+| AF | Lymphatic nodes, legs (105) | 9.8 | 6.5 | −34.0 |
+| AF | Muscle, trunk (107) | 8518.2 | 8897.4 | +4.5 |
+| AF | Muscle, legs (109) | 7054.9 | 6790.1 | −3.8 |
+| AF | Residual tissue, trunk (117) | 11803.1 | 13352.0 | +13.1 |
+| AF | Residual tissue, arms (118) | 2042.4 | 1977.4 | −3.2 |
+| AF | Residual tissue, legs (119) | 8864.8 | 8525.9 | −3.8 |
+| AF | Skin, trunk (123) | 1004.1 | 1059.5 | +5.5 |
+
+### Table S6. H*(10) detector spheres in runs B01–B03 (66 spheres per run)
+
+| Detectors | x (cm) | y (cm) | Height of the centre above the floor (cm) | Radius (cm) |
+|---|---|---|---|---|
+| Seat detectors, row 1 | x of the seat centre (LW, LA, RA, RW) | −173.5 | 38.5 + 15, 40, 75 | 8 |
+| Seat detectors, row 2 | x of the seat centre (LW, LA, RA, RW) | −93.5 | 38.5 + 15, 40, 75 | 8 |
+| Seat detectors, row 3 | x of the seat centre (LW, LA, RA, RW) | −13.5 | 38.5 + 15, 40, 75 | 8 |
+| Seat detectors, row 4 | x of the seat centre (LW, LA, RA, RW) | 66.5 | 38.5 + 15, 40, 75 | 8 |
+| Seat detectors, row 5 | x of the seat centre (LW, LA, RA, RW) | 146.5 | 38.5 + 15, 40, 75 | 8 |
+| Aisle points, row 2 | 0 | −120 | 100, 130, 160 | 8 |
+| Aisle points, row 3 | 0 | −40 | 100, 130, 160 | 8 |
+| Aisle points, row 4 | 0 | 40 | 100, 130, 160 | 8 |
+
+### Table S7. Runs B01–B07: histories, computer time, warnings, lost particles and statistical checks
+
+| Run | Configuration | Histories | Computer time (min) | Wall-clock time (min) | Warnings | Lost particles | Tallies passing all ten checks |
+|---|---|---|---|---|---|---|---|
+| B01_DAIR_janela | Patient at 3RW, detectors, no coach (in air) | 112 276 012 | 401 | 20 | 11 | 0 | 3 of 3 |
+| B02_D_janela | Empty coach, patient at 3RW, detectors | 101 347 521 | 401 | 20 | 6 | 0 | 3 of 3 |
+| B03_D_corredor | Empty coach, patient at 3RA, detectors | 101 443 470 | 401 | 20 | 6 | 0 | 3 of 3 |
+| B04_F_AM_janela | Occupied coach, patient at 3RW, AM passengers | 119 290 716 | 907 | 48 | 9 | 0 | 38 of 40 |
+| B05_F_AF_janela | Occupied coach, patient at 3RW, AF passengers | 114 689 912 | 1009 | 56 | 12 | 0 | 35 of 40 |
+| B06_F_AM_corredor | Occupied coach, patient at 3RA, AM passengers | 103 780 093 | 906 | 48 | 6 | 0 | 40 of 40 |
+| B07_F_AF_corredor | Occupied coach, patient at 3RA, AF passengers | 99 362 442 | 1008 | 56 | 10 | 0 | 37 of 40 |
+
+### Table S8. Effective dose rate per GBq in the body (µSv h⁻¹ GBq⁻¹) of every passenger, patient at the window seat 3RW (conservative relative statistical uncertainty, %), and ratio of E with the dose-response functions to E with the spongiosa approximation for ¹⁷⁷Lu
+
+| Seat | Position relative to the patient | Distance between seat centres (cm) | ¹⁷⁷Lu | ¹⁶¹Tb | ²¹²Pb | ²²⁵Ac | DRF/spongiosa, ¹⁷⁷Lu |
+|---|---|---|---|---|---|---|---|
+| 3RA | beside | 50 | 6.05 (1.4) | 4.25 (2.8) | 285 (1.3) | 40.4 (1.7) | 0.975 |
+| 4RW | behind | 80 | 5.10 (1.4) | 4.14 (2.9) | 173 (1.4) | 30.1 (1.7) | 0.980 |
+| 2RW | in front | 80 | 3.62 (1.5) | 2.26 (3.2) | 145 (1.5) | 23.0 (1.9) | 0.963 |
+| 4RA | diagonal, behind | 95 | 3.37 (1.7) | 2.63 (3.7) | 121 (1.7) | 20.4 (2.1) | 0.979 |
+| 2RA | diagonal, in front | 95 | 2.47 (1.9) | 1.53 (4.2) | 105 (1.8) | 16.1 (2.3) | 0.964 |
+| 4LA | across the aisle, behind | 158 | 0.843 (3.4) | 0.549 (6.7) | 37.1 (3.3) | 5.68 (4.2) | 0.975 |
+| 2LA | across the aisle, in front | 158 | 0.723 (3.7) | 0.425 (6.8) | 34.3 (3.4) | 5.03 (4.4) | 0.965 |
+| 5RA | diagonal, two rows behind | 168 | 0.626 (3.6) | 0.376 (7.4) | 30.7 (3.2) | 4.49 (4.1) | 0.977 |
+| 1RA | diagonal, two rows in front | 168 | 0.487 (3.9) | 0.232 (7.1) | 27.9 (3.3) | 3.73 (4.3) | 0.963 |
+| 3LA | across the aisle | 136 | 0.421 (4.6) | 0.250 (9.3) | 19.8 (4.7) | 2.51 (5.3) | 0.963 |
+| 5LA | across the aisle, two rows behind | 210 | 0.365 (5.1) | 0.223 (9.7) | 17.6 (4.5) | 2.63 (5.8) | 0.976 |
+| 4LW | window across the aisle, behind | 203 | 0.345 (5.3) | 0.207 (9.3) | 17.9 (4.5) | 2.46 (5.8) | 0.975 |
+| 5RW | two rows behind | 160 | 0.325 (4.7) | 0.158 (10.9) | 19.8 (3.9) | 2.54 (5.2) | 0.972 |
+| 5LW | window across the aisle, two rows behind | 246 | 0.310 (5.1) | 0.197 (9.7) | 15.1 (4.8) | 2.15 (5.8) | 0.977 |
+| 1RW | two rows in front | 160 | 0.251 (5.1) | 0.104 (11.1) | 17.7 (3.9) | 2.05 (5.4) | 0.957 |
+| 2LW | window across the aisle, in front | 203 | 0.240 (5.8) | 0.119 (9.9) | 14.0 (4.6) | 1.76 (5.9) | 0.961 |
+| 1LA | across the aisle, two rows in front | 210 | 0.223 (5.4) | 0.104 (10.9) | 12.9 (4.7) | 1.65 (6.0) | 0.958 |
+| 1LW | window across the aisle, two rows in front | 246 | 0.212 (5.4) | 0.107 (9.8) | 12.5 (5.0) | 1.66 (6.6) | 0.962 |
+| 3LW | window across the aisle | 186 | 0.165 (6.9) | 0.0953 (12.0) | 5.72 (7.2) | 0.871 (8.5) | 0.962 |
+| Sum |  |  | 26.1 | 18.0 | 1113 | 169 |  |
+
+### Table S9. Effective dose rate per GBq in the body (µSv h⁻¹ GBq⁻¹) of every passenger, patient at the aisle seat 3RA (conservative relative statistical uncertainty, %), and ratio of E with the dose-response functions to E with the spongiosa approximation for ¹⁷⁷Lu
+
+| Seat | Position relative to the patient | Distance between seat centres (cm) | ¹⁷⁷Lu | ¹⁶¹Tb | ²¹²Pb | ²²⁵Ac | DRF/spongiosa, ¹⁷⁷Lu |
+|---|---|---|---|---|---|---|---|
+| 4RA | behind | 80 | 4.99 (1.5) | 4.13 (3.1) | 171 (1.5) | 29.6 (1.9) | 0.980 |
+| 3RW | beside | 50 | 4.86 (1.7) | 3.32 (3.4) | 240 (1.5) | 33.6 (2.1) | 0.971 |
+| 2RA | in front | 80 | 3.54 (1.7) | 2.24 (3.5) | 144 (1.6) | 22.7 (2.0) | 0.963 |
+| 4RW | diagonal, behind | 95 | 3.20 (1.9) | 2.40 (3.9) | 117 (1.9) | 19.6 (2.3) | 0.978 |
+| 3LA | across the aisle | 86 | 2.61 (2.2) | 1.91 (4.5) | 112 (2.2) | 16.9 (2.8) | 0.974 |
+| 2RW | diagonal, in front | 95 | 2.29 (2.0) | 1.34 (4.3) | 98.8 (2.0) | 14.8 (2.5) | 0.962 |
+| 4LA | across the aisle, behind | 117 | 2.10 (2.3) | 1.61 (4.8) | 78.9 (2.3) | 12.8 (2.9) | 0.977 |
+| 2LA | across the aisle, in front | 117 | 1.60 (2.5) | 0.991 (5.4) | 67.9 (2.5) | 10.3 (3.1) | 0.964 |
+| 5LA | across the aisle, two rows behind | 181 | 1.01 (3.2) | 0.754 (6.3) | 37.2 (3.2) | 6.22 (4.0) | 0.978 |
+| 4LW | window across the aisle, behind | 158 | 1.01 (3.5) | 0.755 (6.8) | 41.2 (3.3) | 6.58 (4.0) | 0.978 |
+| 1LA | across the aisle, two rows in front | 181 | 0.722 (3.5) | 0.427 (6.7) | 31.8 (3.3) | 4.83 (4.2) | 0.963 |
+| 2LW | window across the aisle, in front | 158 | 0.627 (4.0) | 0.350 (7.5) | 31.9 (3.8) | 4.47 (4.7) | 0.962 |
+| 5RW | diagonal, two rows behind | 168 | 0.601 (4.0) | 0.348 (7.9) | 29.6 (3.4) | 4.29 (4.6) | 0.977 |
+| 1RW | diagonal, two rows in front | 168 | 0.471 (4.2) | 0.227 (8.3) | 26.4 (3.4) | 3.57 (4.8) | 0.962 |
+| 3LW | window across the aisle | 136 | 0.414 (4.9) | 0.286 (10.7) | 19.1 (5.1) | 2.45 (5.6) | 0.964 |
+| 5RA | two rows behind | 160 | 0.351 (4.9) | 0.179 (11.5) | 19.8 (4.2) | 2.57 (5.5) | 0.971 |
+| 5LW | window across the aisle, two rows behind | 210 | 0.299 (5.6) | 0.160 (10.3) | 15.4 (4.7) | 2.19 (6.5) | 0.972 |
+| 1RA | two rows in front | 160 | 0.275 (5.7) | 0.110 (10.6) | 17.8 (4.2) | 2.05 (5.4) | 0.955 |
+| 1LW | window across the aisle, two rows in front | 210 | 0.269 (5.3) | 0.128 (9.3) | 15.1 (4.6) | 1.99 (6.2) | 0.962 |
+| Sum |  |  | 31.2 | 21.7 | 1316 | 201 |  |
+
+### Table S10. H*(10) rate per GBq of ¹⁷⁷Lu in the body (µSv h⁻¹ GBq⁻¹) at the seats: the three detectors 15, 40 and 75 cm above the seat and their mean (seat H*(10)), in the empty coach and without the coach
+
+| Seat | Distance from 3RW (cm) | Empty coach, 15 cm | Empty coach, 40 cm | Empty coach, 75 cm | Seat H*(10), empty coach | Seat H*(10), no coach | Coach/no coach | Seat H*(10), empty coach, patient at 3RA |
+|---|---|---|---|---|---|---|---|---|
+| 3RA | 50 | 12.8 | 14.7 | 9.65 | 12.4 | 11.0 | 1.13 | patient |
+| 4RW | 80 | 6.57 | 7.21 | 5.85 | 6.54 | 6.23 | 1.05 | 4.64 |
+| 2RW | 80 | 7.46 | 8.02 | 6.84 | 7.44 | 7.15 | 1.04 | 5.11 |
+| 4RA | 95 | 4.76 | 5.04 | 4.20 | 4.67 | 4.48 | 1.04 | 6.28 |
+| 2RA | 95 | 5.20 | 5.44 | 4.98 | 5.21 | 5.08 | 1.02 | 7.13 |
+| 4LA | 158 | 1.64 | 1.69 | 1.57 | 1.63 | 1.53 | 1.07 | 3.18 |
+| 2LA | 158 | 2.15 | 2.20 | 2.03 | 2.13 | 1.73 | 1.23 | 3.60 |
+| 5RA | 168 | 1.65 | 1.67 | 1.62 | 1.64 | 1.60 | 1.03 | 1.75 |
+| 1RA | 168 | 1.67 | 1.73 | 1.84 | 1.75 | 1.71 | 1.02 | 1.81 |
+| 3LA | 136 | 2.33 | 2.47 | 2.30 | 2.37 | 1.86 | 1.27 | 5.23 |
+| 5LA | 210 | 1.21 | 1.17 | 1.08 | 1.16 | 0.991 | 1.17 | 1.57 |
+| 4LW | 203 | 1.03 | 0.994 | 0.947 | 0.990 | 0.902 | 1.10 | 1.90 |
+| 5RW | 160 | 1.78 | 1.86 | 1.76 | 1.80 | 1.78 | 1.01 | 1.62 |
+| 5LW | 246 | 0.707 | 0.732 | 0.709 | 0.716 | 0.706 | 1.01 | 1.02 |
+| 1RW | 160 | 1.74 | 1.86 | 2.04 | 1.88 | 1.86 | 1.01 | 1.73 |
+| 2LW | 203 | 1.00 | 1.06 | 1.14 | 1.07 | 1.02 | 1.05 | 1.77 |
+| 1LA | 210 | 0.991 | 1.00 | 1.10 | 1.03 | 1.05 | 0.98 | 1.59 |
+| 1LW | 246 | 0.774 | 0.781 | 0.839 | 0.798 | 0.756 | 1.05 | 1.21 |
+| 3LW | 186 | 1.37 | 1.43 | 1.38 | 1.39 | 1.04 | 1.34 | 2.41 |
+| 3RW | patient | – | – | – | – | – | – | 11.8 |
+
+### Table S11. Seat H*(10) rate per GBq in the body (µSv h⁻¹ GBq⁻¹) for ¹⁶¹Tb, ²¹²Pb and ²²⁵Ac in the empty coach, and ratio to the value without the coach (patient at 3RW)
+
+| Seat | Patient at 3RW, ¹⁶¹Tb | Patient at 3RW, ²¹²Pb | Patient at 3RW, ²²⁵Ac | Coach/no coach, ¹⁶¹Tb | Coach/no coach, ²¹²Pb | Coach/no coach, ²²⁵Ac | Patient at 3RA, ¹⁶¹Tb | Patient at 3RA, ²¹²Pb | Patient at 3RA, ²²⁵Ac |
+|---|---|---|---|---|---|---|---|---|---|
+| 3RA | 15.7 | 406 | 70.2 | 1.14 | 1.03 | 1.07 | patient | patient | patient |
+| 4RW | 7.62 | 193 | 35.9 | 0.99 | 1.00 | 1.02 | 5.46 | 140 | 25.5 |
+| 2RW | 9.24 | 227 | 41.1 | 1.00 | 1.00 | 1.01 | 6.19 | 157 | 28.2 |
+| 4RA | 5.44 | 141 | 25.7 | 0.99 | 1.00 | 1.01 | 7.41 | 190 | 34.8 |
+| 2RA | 6.31 | 162 | 28.4 | 0.96 | 0.99 | 1.00 | 8.93 | 223 | 40.0 |
+| 4LA | 1.84 | 50.6 | 9.08 | 0.95 | 0.98 | 0.99 | 3.92 | 97.0 | 17.4 |
+| 2LA | 2.68 | 61.8 | 11.3 | 1.20 | 1.07 | 1.15 | 4.44 | 109 | 19.5 |
+| 5RA | 1.82 | 48.9 | 8.95 | 0.92 | 0.98 | 1.01 | 1.90 | 52.9 | 9.37 |
+| 1RA | 2.04 | 52.8 | 9.66 | 0.91 | 0.99 | 1.00 | 2.08 | 55.9 | 10.1 |
+| 3LA | 3.02 | 72.2 | 13.1 | 1.25 | 1.09 | 1.17 | 6.76 | 166 | 29.1 |
+| 5LA | 1.36 | 33.5 | 6.33 | 1.04 | 1.05 | 1.11 | 1.88 | 45.1 | 8.41 |
+| 4LW | 1.13 | 31.8 | 5.49 | 0.97 | 0.98 | 1.04 | 2.31 | 55.4 | 10.4 |
+| 5RW | 1.93 | 54.2 | 9.68 | 0.87 | 0.99 | 1.00 | 1.80 | 48.5 | 9.02 |
+| 5LW | 0.821 | 22.8 | 3.98 | 0.89 | 0.99 | 1.02 | 1.15 | 31.2 | 5.67 |
+| 1RW | 2.12 | 57.2 | 10.4 | 0.87 | 0.98 | 0.99 | 1.95 | 53.7 | 9.56 |
+| 2LW | 1.21 | 33.3 | 5.95 | 0.94 | 0.99 | 1.01 | 2.10 | 55.7 | 9.83 |
+| 1LA | 1.14 | 32.0 | 5.77 | 0.84 | 0.96 | 0.98 | 1.94 | 47.1 | 8.33 |
+| 1LW | 0.959 | 25.0 | 4.44 | 1.00 | 1.01 | 1.03 | 1.45 | 34.9 | 6.52 |
+| 3LW | 1.71 | 41.3 | 7.50 | 1.29 | 1.13 | 1.23 | 3.12 | 72.4 | 13.2 |
+| 3RW | – | – | – | – | – | – | 15.0 | 387 | 66.8 |
+
+### Table S12. Ratio of the seat H*(10) in the empty coach to the effective dose of the passenger in the occupied coach
+
+| Seat | Patient at 3RW, ¹⁷⁷Lu | Patient at 3RW, ¹⁶¹Tb | Patient at 3RW, ²¹²Pb | Patient at 3RW, ²²⁵Ac | Patient at 3RA, ¹⁷⁷Lu | Patient at 3RA, ¹⁶¹Tb | Patient at 3RA, ²¹²Pb | Patient at 3RA, ²²⁵Ac |
+|---|---|---|---|---|---|---|---|---|
+| 3RA | 2.05 | 3.68 | 1.42 | 1.74 | patient | patient | patient | patient |
+| 4RW | 1.28 | 1.84 | 1.12 | 1.19 | 1.45 | 2.28 | 1.20 | 1.31 |
+| 2RW | 2.06 | 4.09 | 1.56 | 1.79 | 2.23 | 4.63 | 1.59 | 1.90 |
+| 4RA | 1.39 | 2.07 | 1.16 | 1.26 | 1.26 | 1.80 | 1.11 | 1.17 |
+| 2RA | 2.11 | 4.11 | 1.54 | 1.76 | 2.02 | 3.98 | 1.55 | 1.76 |
+| 4LA | 1.94 | 3.36 | 1.36 | 1.60 | 1.51 | 2.44 | 1.23 | 1.36 |
+| 2LA | 2.94 | 6.29 | 1.80 | 2.25 | 2.24 | 4.48 | 1.60 | 1.89 |
+| 5RA | 2.63 | 4.85 | 1.59 | 1.99 | 4.99 | 10.65 | 2.67 | 3.65 |
+| 1RA | 3.59 | 8.78 | 1.89 | 2.59 | 6.57 | 19.02 | 3.15 | 4.93 |
+| 3LA | 5.62 | 12.09 | 3.65 | 5.22 | 2.00 | 3.54 | 1.48 | 1.72 |
+| 5LA | 3.16 | 6.09 | 1.90 | 2.41 | 1.55 | 2.49 | 1.21 | 1.35 |
+| 4LW | 2.87 | 5.46 | 1.78 | 2.23 | 1.88 | 3.06 | 1.34 | 1.58 |
+| 5RW | 5.55 | 12.25 | 2.74 | 3.82 | 2.70 | 5.17 | 1.63 | 2.11 |
+| 5LW | 2.31 | 4.16 | 1.51 | 1.85 | 3.41 | 7.20 | 2.03 | 2.59 |
+| 1RW | 7.47 | 20.40 | 3.22 | 5.07 | 3.67 | 8.58 | 2.03 | 2.68 |
+| 2LW | 4.45 | 10.22 | 2.39 | 3.37 | 2.82 | 6.01 | 1.74 | 2.20 |
+| 1LA | 4.63 | 11.03 | 2.49 | 3.50 | 2.20 | 4.55 | 1.48 | 1.72 |
+| 1LW | 3.77 | 8.94 | 1.99 | 2.67 | 4.49 | 11.32 | 2.31 | 3.27 |
+| 3LW | 8.46 | 17.98 | 7.22 | 8.61 | 5.83 | 10.93 | 3.78 | 5.39 |
+| 3RW | – | – | – | – | 2.42 | 4.53 | 1.61 | 1.99 |
+
+### Table S13. H*(10) rate per GBq in the body (µSv h⁻¹ GBq⁻¹) at the aisle points, 40 cm in front of the backrest line of rows 2–4, in the empty coach
+
+| Aisle point (row, height above the floor) | Patient at 3RW, ¹⁷⁷Lu | Patient at 3RW, ¹⁶¹Tb | Patient at 3RW, ²¹²Pb | Patient at 3RW, ²²⁵Ac | Patient at 3RA, ¹⁷⁷Lu | Patient at 3RA, ¹⁶¹Tb | Patient at 3RA, ²¹²Pb | Patient at 3RA, ²²⁵Ac |
+|---|---|---|---|---|---|---|---|---|
+| Row 2, 100 cm | 2.36 | 2.79 | 74.2 | 12.5 | 3.84 | 4.88 | 114 | 21.1 |
+| Row 2, 130 cm | 2.30 | 2.88 | 69.7 | 12.5 | 3.40 | 4.20 | 98.2 | 18.6 |
+| Row 2, 160 cm | 1.97 | 2.49 | 61.1 | 10.5 | 2.67 | 3.33 | 78.3 | 14.7 |
+| Row 3, 100 cm | 4.74 | 5.92 | 143 | 25.5 | 14.2 | 18.1 | 446 | 78.6 |
+| Row 3, 130 cm | 3.79 | 4.71 | 114 | 20.8 | 8.45 | 10.6 | 277 | 47.6 |
+| Row 3, 160 cm | 2.79 | 3.58 | 86.6 | 15.4 | 4.55 | 5.73 | 148 | 25.6 |
+| Row 4, 100 cm | 2.90 | 3.32 | 102 | 16.9 | 7.39 | 8.90 | 245 | 43.0 |
+| Row 4, 130 cm | 2.53 | 2.91 | 85.4 | 14.6 | 5.15 | 5.94 | 171 | 29.2 |
+| Row 4, 160 cm | 2.03 | 2.46 | 66.8 | 12.1 | 3.10 | 3.68 | 106 | 18.0 |
+
+### Table S14. Effective dose (µSv) to every passenger in a 2 h trip departing 4 h after administration, at typical activities (patient voids just before departure)
+
+| Seat | Patient at 3RW, ¹⁷⁷Lu | Patient at 3RW, ¹⁶¹Tb | Patient at 3RW, ²¹²Pb | Patient at 3RW, ²²⁵Ac | Patient at 3RA, ¹⁷⁷Lu | Patient at 3RA, ¹⁶¹Tb | Patient at 3RA, ²¹²Pb | Patient at 3RA, ²²⁵Ac |
+|---|---|---|---|---|---|---|---|---|
+| 3RA | 66.1 | 45.6 | 62.8 | 0.483 | patient | patient | patient | patient |
+| 4RW | 56.7 | 45.1 | 38.6 | 0.365 | 35.3 | 26.0 | 26.0 | 0.237 |
+| 2RW | 40.0 | 24.8 | 32.3 | 0.278 | 25.1 | 14.4 | 21.7 | 0.177 |
+| 4RA | 37.2 | 28.6 | 27.1 | 0.247 | 55.5 | 45.0 | 38.3 | 0.360 |
+| 2RA | 26.9 | 16.5 | 23.1 | 0.193 | 39.1 | 24.6 | 32.0 | 0.274 |
+| 4LA | 9.25 | 5.94 | 8.25 | 0.0685 | 23.1 | 17.5 | 17.5 | 0.154 |
+| 2LA | 7.88 | 4.58 | 7.55 | 0.0601 | 17.6 | 10.7 | 15.0 | 0.124 |
+| 5RA | 6.97 | 4.13 | 6.90 | 0.0545 | 3.88 | 1.93 | 4.40 | 0.0311 |
+| 1RA | 5.32 | 2.52 | 6.12 | 0.0445 | 3.00 | 1.19 | 3.92 | 0.0244 |
+| 3LA | 4.60 | 2.69 | 4.32 | 0.0300 | 28.6 | 20.5 | 24.9 | 0.203 |
+| 5LA | 4.00 | 2.40 | 3.91 | 0.0316 | 11.3 | 8.19 | 8.33 | 0.0756 |
+| 4LW | 3.80 | 2.23 | 3.98 | 0.0295 | 11.1 | 8.11 | 9.10 | 0.0789 |
+| 5RW | 3.59 | 1.72 | 4.40 | 0.0305 | 6.73 | 3.84 | 6.64 | 0.0523 |
+| 5LW | 3.39 | 2.14 | 3.34 | 0.0257 | 3.32 | 1.74 | 3.45 | 0.0267 |
+| 1RW | 2.74 | 1.12 | 3.91 | 0.0244 | 5.14 | 2.47 | 5.81 | 0.0426 |
+| 2LW | 2.62 | 1.28 | 3.11 | 0.0211 | 6.89 | 3.78 | 7.08 | 0.0537 |
+| 1LA | 2.43 | 1.11 | 2.84 | 0.0198 | 7.86 | 4.61 | 6.95 | 0.0574 |
+| 1LW | 2.30 | 1.15 | 2.76 | 0.0199 | 2.92 | 1.38 | 3.30 | 0.0237 |
+| 3LW | 1.79 | 1.03 | 1.24 | 0.0104 | 4.51 | 3.07 | 4.19 | 0.0292 |
+| 3RW | patient | patient | patient | patient | 53.2 | 35.6 | 52.9 | 0.401 |
+| Sum (person-µSv) | 288 | 195 | 246 | 2.04 | 344 | 235 | 291 | 2.43 |
+| Most exposed seat, share (%) | 23 | 23 | 25 | 24 | 16 | 19 | 18 | 17 |
+| Five most exposed seats, share (%) | 79 | 83 | 75 | 77 | 62 | 65 | 60 | 61 |
+
+### Table S15. Effect of the filling of the bladder during an 8 h trip departing 4 h after administration: dose to the most exposed passenger (µSv) with the bladder filling and with the bladder kept empty, and increase over all 19 seats
+
+| Radionuclide | Patient seat | Most exposed seat | Bladder filling (µSv) | Bladder kept empty (µSv) | Increase (%) | Increase, range over the 19 seats (%) |
+|---|---|---|---|---|---|---|
+| ¹⁷⁷Lu | 3RW | 3RA | 243 | 213 | 14 | 12–21 |
+| ¹⁷⁷Lu | 3RA | 4RA | 214 | 178 | 20 | 12–23 |
+| ¹⁶¹Tb | 3RW | 4RW | 165 | 146 | 13 | 7–16 |
+| ¹⁶¹Tb | 3RA | 4RA | 165 | 146 | 13 | 8–17 |
+| ²¹²Pb | 3RW | 3RA | 200 | 172 | 16 | 11–23 |
+| ²¹²Pb | 3RA | 3RW | 169 | 144 | 17 | 15–24 |
+| ²²⁵Ac | 3RW | 3RA | 1.80 | 1.56 | 15 | 15–22 |
+| ²²⁵Ac | 3RA | 3RW | 1.50 | 1.28 | 17 | 14–24 |
+
+Numbers quoted in the text of the Supplementary Material
+  S8: Lu177, patient RW: share of the five most exposed seats 78.8 %; uncertainty at the five most exposed seats (by 177Lu) 1.4-1.9 %, at all seats up to 6.9 %
+  S8: Tb161, patient RW: share of the five most exposed seats 82.5 %; uncertainty at the five most exposed seats (by 177Lu) 2.8-4.2 %, at all seats up to 12.0 %
+  S8: Pb212, patient RW: share of the five most exposed seats 74.6 %; uncertainty at the five most exposed seats (by 177Lu) 1.3-1.8 %, at all seats up to 7.2 %
+  S8: Ac225, patient RW: share of the five most exposed seats 76.9 %; uncertainty at the five most exposed seats (by 177Lu) 1.7-2.3 %, at all seats up to 8.5 %
+  S8: Tb161/Lu177, patient RW: five most exposed seats 0.62-0.81, other seats 0.41-0.65
+  S8: Pb212/Lu177, patient RW: five most exposed seats 33.87-47.18, other seats 34.75-70.58
+  S8: Ac225/Lu177, patient RW: five most exposed seats 5.90-6.69, other seats 5.29-8.14
+  S9: Lu177, patient RA: share of the five most exposed seats 61.4 %; uncertainty at the five most exposed seats (by 177Lu) 1.5-2.2 %, at all seats up to 5.7 %
+  S9: Tb161, patient RA: share of the five most exposed seats 64.6 %; uncertainty at the five most exposed seats (by 177Lu) 3.1-4.5 %, at all seats up to 11.5 %
+  S9: Pb212, patient RA: share of the five most exposed seats 59.6 %; uncertainty at the five most exposed seats (by 177Lu) 1.5-2.2 %, at all seats up to 5.1 %
+  S9: Ac225, patient RA: share of the five most exposed seats 60.7 %; uncertainty at the five most exposed seats (by 177Lu) 1.9-2.8 %, at all seats up to 6.5 %
+  S9: Tb161/Lu177, patient RA: five most exposed seats 0.63-0.83, other seats 0.40-0.77
+  S9: Pb212/Lu177, patient RA: five most exposed seats 34.26-49.37, other seats 36.66-64.50
+  S9: Ac225/Lu177, patient RA: five most exposed seats 5.94-6.91, other seats 5.92-7.59
+  S11: Lu177 coach/no coach: mean 1.086, five nearest seats 1.025-1.126, rows 1 and 5 0.983-1.167, seats 3LA/3LW 1.269/1.340
+  S11: Tb161 coach/no coach: mean 1.001, five nearest seats 0.963-1.139, rows 1 and 5 0.842-1.041, seats 3LA/3LW 1.254/1.287
+  S11: Pb212 coach/no coach: mean 1.011, five nearest seats 0.991-1.033, rows 1 and 5 0.956-1.052, seats 3LA/3LW 1.089/1.128
+  S11: Ac225 coach/no coach: mean 1.044, five nearest seats 1.001-1.068, rows 1 and 5 0.975-1.109, seats 3LA/3LW 1.172/1.231
+  S10: seat 3RA (patient 3RW), 177Lu: 9.65-14.67 uSv/h/GBq over the three heights (ratio 1.52)
+  S12: Lu177 H*/E: five most exposed seats 1.26-2.42, other seats 1.51-8.46; largest 8.46 (patient RW, seat 3LW)
+  S12: Tb161 H*/E: five most exposed seats 1.80-4.53, other seats 2.44-20.40; largest 20.40 (patient RW, seat 1RW)
+  S12: Pb212 H*/E: five most exposed seats 1.11-1.61, other seats 1.21-7.22; largest 7.22 (patient RW, seat 3LW)
+  S12: Ac225 H*/E: five most exposed seats 1.17-1.99, other seats 1.35-8.61; largest 8.61 (patient RW, seat 3LW)
+  check: trip doses recomputed here reproduce the collective and top-seat values of article2_results.json
+  S14: 177Lu, patient RW: two rows away, dose relative to the most exposed seat 0.035-0.106
+  S14: 177Lu, patient RA: two rows away, dose relative to the most exposed seat 0.053-0.203
+  S15: largest increase due to the bladder over all seats, radionuclides and patient seats: 23.8 % (Pb212, patient RA, seat 5LW)

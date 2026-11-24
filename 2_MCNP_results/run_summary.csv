@@ -1,0 +1,8 @@
+run,nps,computer_time_min,termination,start,end,warnings,lost_particles,tallies_passing_10_checks,tallies_total,tallies_failing,mctal,mctal_sha256
+B01_DAIR_janela,112276012,400.79,it had used  400  minutes of computer time,11/01/26 10:33:18,11/01/26 10:53:39,11,0,3,3,,B01_DAIR_janela.m,f6024b1ee0fa2b1c10a9c87c3183c0a8c4342c3abf4fac1e6e6b008b05bd2cf5
+B02_D_janela,101347521,400.82,it had used  400  minutes of computer time,11/01/26 10:53:39,11/01/26 11:14:01,6,0,3,3,,B02_D_janela.m,aa215bed6499428031e0984a11c405b7aaaf18f9be5f5782b0b9ad85b092e5c3
+B03_D_corredor,101443470,401.16,it had used  400  minutes of computer time,11/01/26 11:14:01,11/01/26 11:34:24,6,0,3,3,,B03_D_corredor.m,d91d6ec2a2474c902208127640549e6a2b397e9f5b1d9a7edfd1eed18271459c
+B04_F_AM_janela,119290716,906.76,it had used  900  minutes of computer time,11/01/26 11:34:24,11/01/26 12:22:47,9,0,38,40,454 mean trend; 514 mean trend,B04_F_AM_janela.m,b145169a7ec627ecf383424525c060a0a51f62b58c321b8a890de7b01ecfeb6f
+B05_F_AF_janela,114689912,1009.18,it had used 1000  minutes of computer time,11/01/26 12:22:47,11/01/26 13:18:28,12,0,35,40,134 mean trend; 214 mean trend; 494 mean trend; 554 FOM trend; 634 mean trend,B05_F_AF_janela.m,e60128521f171b3fddf7820fa4e17856ec598b2ab99ebfb5eec88221cdaaca97
+B06_F_AM_corredor,103780093,905.83,it had used  900  minutes of computer time,11/01/26 13:18:29,11/01/26 14:06:49,6,0,40,40,,B06_F_AM_corredor.m,a30cd394b7e761560d2768f517388db8505739175397a95c5e08ef6b3b255f6c
+B07_F_AF_corredor,99362442,1007.99,it had used 1000  minutes of computer time,11/01/26 14:06:49,11/01/26 15:02:28,10,0,37,40,154 FOM trend; 534 mean trend; 906 FOM trend,B07_F_AF_corredor.m,77eb87bd13a46a0da970105734425d8bec506fb0fad717e00d417a7a0136e59f
